@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 英國倫敦 & Lichfield 探親之旅</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased; }
+        .timeline-line { position: absolute; left: 1.5rem; top: 0; bottom: 0; width: 2px; background-color: #e5e7eb; z-index: 0; }
+        .clip-path-slope { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        /* Mobile adjustment for timeline */
+        @media (max-width: 640px) {
+            .timeline-line { left: 1rem; }
+            .day-card { padding-left: 0.5rem; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Hero Section -->
+    <header class="relative bg-slate-900 text-white clip-path-slope pb-20">
+        <!-- New Hero: London Red Bus & Big Ben (Stable) -->
+        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+        <div class="relative container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <span class="bg-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-sm">Family Trip 2026</span>
+                    <h1 class="text-4xl md:text-6xl font-bold mt-3 mb-2 tracking-tight">英國倫敦 & Lichfield</h1>
+                    <p class="text-blue-100 text-lg md:text-xl font-light"><i class="far fa-calendar-alt mr-2"></i>3月20日 - 4月6日 (18天)</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 -mt-12 relative z-10 pb-20">
+        
+        <!-- Flight Info -->
+        <div class="grid md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white rounded-2xl shadow-xl p-5 border-l-4 border-green-500 transform transition hover:scale-[1.01]">
+                <h3 class="text-gray-400 text-xs font-bold uppercase mb-3 tracking-wider">去程 (CX)</h3>
+                <div class="flex justify-between items-center mb-2">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-800">HKG</div>
+                        <div class="text-xs text-gray-500">香港</div>
+                    </div>
+                    <div class="flex-1 px-4 text-center">
+                        <i class="fas fa-plane text-green-500 text-xl"></i>
+                        <div class="h-px bg-gray-200 my-1 w-full"></div>
+                        <div class="text-xs text-gray-400">直飛</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-800">LHR</div>
+                        <div class="text-xs text-gray-500">倫敦</div>
+                    </div>
+                </div>
+                <div class="flex justify-between text-sm font-medium mt-4 bg-green-50 p-3 rounded-lg text-green-800">
+                    <div><i class="far fa-clock mr-1"></i> 3/20 22:55</div>
+                    <div><i class="fas fa-map-marker-alt mr-1"></i> 3/21 05:00+1</div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-5 border-l-4 border-blue-500 transform transition hover:scale-[1.01]">
+                <h3 class="text-gray-400 text-xs font-bold uppercase mb-3 tracking-wider">回程 (AY)</h3>
+                <div class="flex justify-between items-center mb-2">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-800">LHR</div>
+                        <div class="text-xs text-gray-500">倫敦</div>
+                    </div>
+                    <div class="flex-1 px-4 text-center">
+                        <i class="fas fa-plane text-blue-500 text-xl"></i>
+                        <div class="h-px bg-gray-200 my-1 w-full"></div>
+                        <div class="text-xs text-gray-400">經赫爾辛基</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-800">HKG</div>
+                        <div class="text-xs text-gray-500">香港</div>
+                    </div>
+                </div>
+                <div class="flex justify-between text-sm font-medium mt-4 bg-blue-50 p-3 rounded-lg text-blue-800">
+                    <div><i class="far fa-clock mr-1"></i> 4/5 18:10</div>
+                    <div><i class="fas fa-map-marker-alt mr-1"></i> 4/6 05:35+1</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Info -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-10">
+            <div class="md:flex">
+                <div class="md:w-1/3">
+                    <!-- New Hotel Image (Hyde Park view generic) -->
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80" alt="London Hotel Interior" class="w-full h-48 md:h-full object-cover">
+                </div>
+                <div class="p-6 md:w-2/3">
+                    <div class="uppercase tracking-wide text-sm text-blue-600 font-bold mb-1">倫敦住宿 (3/21 - 3/26)</div>
+                    <h2 class="text-2xl font-bold text-gray-900 leading-tight">Best Western Mornington Hotel Hyde Park</h2>
+                    <p class="mt-2 text-gray-600 text-sm"><i class="fas fa-map-pin text-red-500 mr-1"></i>12 Lancaster Gate, London, W2 3LG</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-600 mr-2">海德公園對面</span>
+                        <span class="inline-block bg-gray-100 rounded-full px-3 py-1 text-xs font-semibold text-gray-600">Lancaster Gate 站</span>
+                    </div>
+                    <div class="mt-6 flex gap-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Best+Western+Mornington+Hotel+Hyde+Park+London" target="_blank" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg shadow transition text-sm font-medium flex items-center justify-center">
+                            <i class="fas fa-location-arrow mr-2"></i>導航
+                        </a>
+                        <a href="https://www.bestwestern.co.uk/" target="_blank" class="flex-1 border border-gray-300 hover:bg-gray-50 text-gray-700 text-center py-2.5 rounded-lg transition text-sm font-medium flex items-center justify-center">
+                            <i class="fas fa-globe mr-2"></i>官網
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticky Navigation -->
+        <div class="sticky top-0 z-30 bg-slate-50/95 backdrop-blur-sm pt-4 pb-4 mb-4 border-b border-gray-200">
+            <div class="flex gap-3 overflow-x-auto px-1 no-scrollbar pb-2">
+                <button onclick="filterDays('london1')" class="nav-btn active flex-none px-6 py-2.5 rounded-full text-sm font-bold shadow-sm transition bg-blue-600 text-white hover:bg-blue-700">倫敦精華</button>
+                <button onclick="filterDays('lichfield')" class="nav-btn flex-none px-6 py-2.5 rounded-full text-sm font-bold shadow-sm border border-gray-200 bg-white text-gray-600 hover:bg-gray-100">Lichfield</button>
+                <button onclick="filterDays('return')" class="nav-btn flex-none px-6 py-2.5 rounded-full text-sm font-bold shadow-sm border border-gray-200 bg-white text-gray-600 hover:bg-gray-100">回程</button>
+            </div>
+        </div>
+
+        <!-- Itinerary Content -->
+        <div class="space-y-6" id="itinerary-container">
+            
+            <!-- Day 1 -->
+            <div class="day-card group london1 relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line group-last:bottom-auto group-last:h-4"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">21</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">3月21日 (六) 抵達與諾丁山市集</h3>
+                        <span class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded">週六限定</span>
+                    </div>
+                    <div class="p-5">
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                <div class="flex justify-between items-start">
+                                    <div class="time text-xs font-bold text-gray-500 mb-1">05:00</div>
+                                </div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">抵達希斯路機場 (LHR)</p>
+                                    <p class="text-sm text-gray-600 mb-2">乘 Elizabeth Line 直達 Paddington 站 (£13.30)。</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Heathrow+Airport+Terminal+3" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>機場導航</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Paddington+Station+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>Paddington 站</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">09:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Portobello Road Market</p>
+                                    <p class="text-sm text-gray-600 mb-2">諾丁山波多貝羅市集，古董與美食。</p>
+                                    <!-- New Notting Hill Image (Colorful Houses) -->
+                                    <img src="images/notting_hill.jpg" class="w-full h-32 md:h-40 object-cover rounded-xl mb-2 shadow-sm" alt="Notting Hill">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Portobello+Road+Market+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>市集導航</a>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">14:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Kensington Gardens</p>
+                                    <p class="text-sm text-gray-600 mb-2">肯辛頓花園散步，欣賞皇宮外觀。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Kensington+Gardens+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>花園導航</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card group london1 relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">22</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">3月22日 (日) 皇室地標巡禮</h3>
+                        <span class="text-xs font-bold bg-yellow-100 text-yellow-700 px-2 py-1 rounded">步行</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <!-- New Buckingham Palace & Big Ben Images -->
+                            <img src="images/buckingham_palace.jpg" alt="Buckingham Palace" class="rounded-xl h-24 md:h-32 w-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=400&q=80" alt="Big Ben" class="rounded-xl h-24 md:h-32 w-full object-cover">
+                        </div>
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">10:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Buckingham Palace (白金漢宮)</p>
+                                    <p class="text-sm text-gray-600 mb-2">11:00 衛兵交接儀式（需提早）。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Buckingham+Palace+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>皇宮導航</a>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">13:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Westminster Abbey & Big Ben</p>
+                                    <p class="text-sm text-gray-600 mb-2">西敏寺與大笨鐘。</p>
+                                    <div class="flex gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Westminster+Abbey" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>西敏寺</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Big+Ben+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>大笨鐘</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-purple-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">15:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">London Eye (倫敦眼)</p>
+                                    <p class="text-sm text-gray-600 mb-2">俯瞰泰晤士河景色。</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=London+Eye" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>摩天輪導航</a>
+                                        <a href="https://www.londoneye.com/" target="_blank" class="inline-flex items-center text-xs border border-gray-200 text-gray-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 font-medium">購票 <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card group london1 relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">23</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">3月23日 (一) 博物館與柯芬園</h3>
+                        <span class="text-xs font-bold bg-gray-200 text-gray-700 px-2 py-1 rounded">人文</span>
+                    </div>
+                    <div class="p-5">
+                        <!-- New British Museum Image (Great Court) -->
+                         <img src="images/british_museum.jpg" class="w-full h-32 md:h-40 object-cover rounded-xl mb-4 shadow-sm" alt="British Museum">
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">10:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">British Museum (大英博物館)</p>
+                                    <p class="text-sm text-gray-600 mb-2">探索世界文明瑰寶。</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=British+Museum+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>博物館導航</a>
+                                        <a href="https://www.britishmuseum.org/" target="_blank" class="inline-flex items-center text-xs border border-gray-200 text-gray-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 font-medium">預約 <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-pink-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">15:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Covent Garden (柯芬園)</p>
+                                    <p class="text-sm text-gray-600 mb-2">街頭表演、Apple Market 市集。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Covent+Garden+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>柯芬園導航</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card group london1 relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">24</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gradient-to-r from-green-50 to-white px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">3月24日 (二) 倫敦塔與空中花園</h3>
+                        <span class="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded">泰晤士河</span>
+                    </div>
+                    <div class="p-5">
+                         <div class="grid grid-cols-2 gap-2 mb-4">
+                             <!-- New Tower of London & Sky Garden Images -->
+                            <img src="images/Tower_of_London_viewed_from_the_River_Thames.jpg" alt="Tower of London" class="rounded-xl h-24 md:h-32 w-full object-cover">
+                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=400&q=80" alt="Sky Garden View" class="rounded-xl h-24 md:h-32 w-full object-cover">
+                        </div>
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-gray-500"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">09:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Tower of London (倫敦塔)</p>
+                                    <p class="text-sm text-gray-600 mb-2">參觀皇室珠寶。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Tower+of+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>倫敦塔導航</a>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">12:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-blue-700 text-lg"><i class="fas fa-leaf mr-1"></i>Sky Garden (空中花園)</p>
+                                    <p class="text-sm text-gray-600 mb-2">35樓免費觀景 (需提前預約)。</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Sky+Garden+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>花園導航</a>
+                                        <a href="https://skygarden.london/" target="_blank" class="inline-flex items-center text-xs border border-gray-200 text-gray-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 font-medium">預約 <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-orange-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">14:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Tower Bridge & Borough Market</p>
+                                    <p class="text-sm text-gray-600 mb-2">倫敦塔橋與美食市集。</p>
+                                    <div class="flex gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Tower+Bridge+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>塔橋</a>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Borough+Market+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>市集</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card group london1 relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">25</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gradient-to-r from-blue-50 to-white px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">3月25日 (三) 購物與夜遊船</h3>
+                        <span class="text-xs font-bold bg-pink-100 text-pink-700 px-2 py-1 rounded">浪漫</span>
+                    </div>
+                    <div class="p-5">
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-indigo-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">11:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Oxford St & Regent St</p>
+                                    <p class="text-sm text-gray-600 mb-2">購物衝刺：Selfridges, Liberty。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Oxford+Circus+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>購物區導航</a>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-pink-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">17:00</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">Carnaby Street</p>
+                                    <p class="text-sm text-gray-600 mb-2">特色街道與 Kingly Court 晚餐。</p>
+                                    <!-- New Carnaby Street Image (Lights) -->
+                                    <img src="images/carnaby_street.jpg" class="w-full h-32 md:h-40 object-cover rounded-xl mb-2 shadow-sm" alt="Carnaby Street">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Carnaby+Street+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>Carnaby 導航</a>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-800"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">19:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-blue-800 text-lg"><i class="fas fa-ship mr-1"></i>泰晤士河夜遊船</p>
+                                    <p class="text-sm text-gray-600 mb-2">Westminster Pier 上船欣賞夜景。</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Westminster+Pier+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>碼頭導航</a>
+                                        <a href="https://www.cityexperiences.com/london/city-cruises/" target="_blank" class="inline-flex items-center text-xs border border-gray-200 text-gray-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 font-medium">購票 <i class="fas fa-external-link-alt ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 (Move) -->
+            <div class="day-card group london1 lichfield relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">26</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">3月26日 (四) 前往 Lichfield</h3>
+                        <span class="text-xs font-bold bg-purple-100 text-purple-700 px-2 py-1 rounded">火車</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="bg-purple-50 border border-purple-100 rounded-xl p-4 mb-4">
+                            <div class="flex items-center mb-2 text-purple-800 font-bold">
+                                <i class="fas fa-train mr-2 text-xl"></i> 火車行程
+                            </div>
+                            <div class="flex justify-between items-center text-sm mb-3">
+                                <div>
+                                    <div class="font-bold text-gray-700">London Euston</div>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=London+Euston+Station" target="_blank" class="text-blue-500 hover:underline text-xs"><i class="fas fa-location-arrow mr-1"></i>導航</a>
+                                </div>
+                                <i class="fas fa-long-arrow-alt-right text-purple-300 mx-2"></i>
+                                <div class="text-right">
+                                    <div class="font-bold text-gray-700">Lichfield</div>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Lichfield+Trent+Valley+Station" target="_blank" class="text-blue-500 hover:underline text-xs"><i class="fas fa-location-arrow mr-1"></i>導航</a>
+                                </div>
+                            </div>
+                            <a href="https://www.thetrainline.com/" target="_blank" class="block w-full text-center bg-purple-600 text-white text-xs py-2 rounded-lg hover:bg-purple-700 font-bold shadow-sm">Trainline 訂票</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lichfield Break -->
+            <div class="day-card group lichfield relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-gray-400 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base"><i class="fas fa-user-friends"></i></div>
+                 <div class="bg-slate-50 border-2 border-dashed border-gray-300 rounded-2xl p-6 text-center">
+                    <!-- New Generic Beautiful English Cathedral Image -->
+                    <img src="https://images.unsplash.com/photo-1521207662999-5f2ac07945d8?auto=format&fit=crop&w=600&q=80" class="w-full h-32 object-cover rounded-xl mb-4 opacity-80" alt="English Cathedral">
+                    <h3 class="text-xl font-bold text-gray-600">3月27日 - 4月3日</h3>
+                    <p class="text-gray-500 mb-3">Lichfield 探訪朋友行程</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Lichfield+Cathedral" target="_blank" class="inline-flex items-center text-xs bg-white border border-gray-300 text-gray-600 px-3 py-1.5 rounded-full hover:bg-gray-50 font-medium"><i class="fas fa-location-arrow mr-1"></i>Lichfield 大教堂導航</a>
+                </div>
+            </div>
+
+            <!-- Day Return -->
+            <div class="day-card group return relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">4</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">4月4日 (六) 返回倫敦</h3>
+                        <span class="text-xs font-bold bg-indigo-100 text-indigo-700 px-2 py-1 rounded">火車</span>
+                    </div>
+                    <div class="p-5">
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-indigo-400"></div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">返回倫敦 Euston</p>
+                                    <p class="text-sm text-gray-600 mb-2">入住 King's Cross 或 Euston 附近。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Kings+Cross+Station+London" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>King's Cross 導航</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Day Departure -->
+             <div class="day-card group return relative pl-8 md:pl-12 pb-8">
+                <div class="timeline-line group-last:h-0"></div>
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">5</div>
+                
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 flex justify-between items-center">
+                        <h3 class="font-bold text-base md:text-lg text-gray-800">4月5日 (日) 啟程返港</h3>
+                        <span class="text-xs font-bold bg-red-100 text-red-700 px-2 py-1 rounded">飛機</span>
+                    </div>
+                    <div class="p-5">
+                        <ul class="space-y-6">
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">13:30</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">前往希斯路機場 (LHR)</p>
+                                    <p class="text-sm text-gray-600 mb-2">預留時間退稅。</p>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Heathrow+Airport" target="_blank" class="inline-flex items-center text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-100 font-medium"><i class="fas fa-location-arrow mr-1"></i>機場導航</a>
+                                </div>
+                            </li>
+                            <li class="relative pl-4 border-l-2 border-gray-200">
+                                <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-500"></div>
+                                <div class="time text-xs font-bold text-gray-500 mb-1">18:10</div>
+                                <div class="content">
+                                    <p class="font-bold text-gray-800 text-lg">起飛 (AY1338)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <!-- Arrival -->
+             <div class="day-card group return relative pl-8 md:pl-12">
+                <div class="absolute left-1 md:left-2 top-0 w-8 h-8 md:w-10 md:h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10 border-4 border-slate-50 text-sm md:text-base">6</div>
+                <div class="ml-2 pt-1 pb-10">
+                    <p class="font-bold text-gray-800 text-lg">4月6日 05:35 抵達香港</p>
+                    <p class="text-gray-500 text-sm">旅程圓滿結束！</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Budget & Tips Section -->
+        <div class="mt-12 grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                <h3 class="text-xl font-bold mb-4 text-gray-800 flex items-center"><i class="fas fa-wallet mr-2 text-yellow-500"></i>預算估算 (每人)</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-600">倫敦交通 (每日上限)</span>
+                        <span class="font-bold">£8.90 / 日</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-600">機場交通 (Elizabeth Line)</span>
+                        <span class="font-bold">£13.30 / 程</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-600">Lichfield 火車 (來回)</span>
+                        <span class="font-bold">£20 - £40</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-100 pb-2">
+                        <span class="text-gray-600">景點門票預留</span>
+                        <span class="font-bold">£150</span>
+                    </li>
+                    <li class="flex justify-between pt-2">
+                        <span class="text-gray-600">餐飲預算</span>
+                        <span class="font-bold">£30 - £50 / 日</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-slate-800 text-white p-6 rounded-2xl shadow-lg">
+                <h3 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-lightbulb mr-2 text-yellow-300"></i>旅遊貼士</h3>
+                <ul class="space-y-4 text-sm opacity-90">
+                    <li class="flex items-start"><i class="fas fa-credit-card mt-1 mr-3 text-blue-300"></i><div><strong>支付：</strong>全程使用 Contactless 信用卡或 Apple Pay，無需太多現金。</div></li>
+                    <li class="flex items-start"><i class="fas fa-cloud-rain mt-1 mr-3 text-blue-300"></i><div><strong>天氣：</strong>3-4月多雨，必備雨傘及防風外套。</div></li>
+                    <li class="flex items-start"><i class="fas fa-clock mt-1 mr-3 text-blue-300"></i><div><strong>時差：</strong>3月29日開始夏令時間，時鐘撥快1小時。</div></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-900 text-gray-400 text-center py-10 mt-12 text-sm">
+        <p>Designed with <i class="fas fa-heart text-red-500 mx-1"></i> for your UK Trip 2026</p>
+    </footer>
+
+    <script>
+        function filterDays(category) {
+            const allCards = document.querySelectorAll('.day-card');
+            const buttons = document.querySelectorAll('.nav-btn');
+
+            buttons.forEach(btn => {
+                if(btn.onclick.toString().includes(category)) {
+                    btn.classList.remove('bg-white', 'text-gray-600', 'hover:bg-gray-100', 'border');
+                    btn.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+                } else {
+                    btn.classList.add('bg-white', 'text-gray-600', 'hover:bg-gray-100', 'border');
+                    btn.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+                }
+            });
+
+            allCards.forEach(card => {
+                if (card.classList.contains(category)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+        
+        // Initialize showing London first
+        filterDays('london1');
+    </script>
+</body>
+</html>
